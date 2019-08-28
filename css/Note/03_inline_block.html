@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+        <title>行内元素、块元素</title>
+        <style>
+            .s1{background-color: greenyellow;}
+            .s2{background-color: pink; width: 200px;}
+            .s3{background-color: greenyellow; display: block;}
+            .s4{background-color: pink; display: inline;}
+        </style>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+    <body>
+        <font style="font-style: normal">《<a href="01_HelloCss.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************行内元素、块元素**********************</font><br/>
+        <!--
+            行内元素：  div p
+            块元素：    span
+            元素类型转换：display: (inline; inline-block; block)
+        -->
+        <span class="s1">行内元素</span>
+        <div class="s2">块元素</div>
+        <span class="s3">行内元素转块元素</span>
+        <div class="s4">块元素转行内元素</div>
+    </body>
+</html>

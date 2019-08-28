@@ -1,0 +1,52 @@
+.AnLi{
+    color: red;
+    font-size: 20px;
+}
+
+.div_1{
+    width: 490px;
+    height: 300px;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.div_1_1{
+    width: 100px;
+    height: 60px;
+    background-color: pink;
+    border: 1px solid blue;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+}
+/*案例一*/
+#div_1_1_special_1{
+    position: relative; /*相对定位*/
+    left: -40px; /*相对原来的位置，向右移动*/
+    top: 80px;  /*相对原来的位置，向下移动*/
+}
+/*案例二*/
+#div_1_1_special_2{
+    position: absolute; /*绝对定位*/
+    left: 0px; /*相对父元素，向右移动*/
+    top: 80px;  /*相对父元素，向下移动*/
+}
+/*案例三*/
+#div_1_1_special_3{
+    position: fixed; /*固定定位*/
+    right: 0px;
+    bottom: 0px;
+}
+/*案例四*/
+#div_1_1_special_4{
+    position: -webkit-sticky;
+    position: sticky; /*粘性定位*/
+    bottom: 0px;
+}
+
+a:link{color: blue; text-decoration: none;}
+a:hover{text-decoration: underline;}
+a:visited{color: blue;}

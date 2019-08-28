@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css概述</title>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        
+        <!-- 方式一：嵌入式(内页样式) -->
+        <style>
+            div{width: 100%; height: auto; border: 1px solid blue; margin-bottom: 15px;}
+        </style>
+
+        <!-- 方式二：外联式，引入外联文件 -->
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+    <body>
+        <!-- 方式三：内联式(行内样式) -->
+        <font>《<a href="01_HelloCss.html" target="_self">回首页</a>》</font><br/>
+        <div style="margin-top: 15px;">
+            <font>**********************css文件**********************</font><br/>
+            <ol>
+                <li>嵌入式(内页样式) --> &lt;style&gt; ... &lt;/style&gt;</li>
+                <li>外联式，引入外联文件 --> &lt;link rel="stylesheet" href=""&gt;</li>
+                <li>内联式(行内样式) --> style=""</li>
+            </ol>
+        </div>
+        
+        <div>
+            <font>**********************选择器**********************</font><br/>
+            <ol>
+                <li>id选择器</li>
+                <li>类选择器</li>
+                <li>html选择器</li>
+                <li>通配符选择器</li>
+                <li>父子选择器
+                    <ul>
+                        <li>后代选择器(所有子元素)： 空格</li>
+                        <li>子选择器(直接子元素)：   ></li>
+                        <li>相邻兄弟选择器(其后第一个)： +</li>
+                        <li>一般兄弟选择器(其后所有)： ~</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <!--选择器
+            id选择器： . id=""              .名称{}
+            类选择器： #  class=""          #名称{}
+            html选择器： 标签(a hn p...)    标签{}
+            通配符选择器： *                *{}
+            组合器选择器：
+                后代选择器(所有子元素)： 空格
+                子选择器(直接子元素)：   >
+                相邻兄弟选择器(其后第一个)： +
+                一般兄弟选择器(其后所有)： ~
+
+                如：<a> 链接 <p> 段落 </p> </a>  a{}   a p{}
+        -->
+
+        <div>
+            <font>**********************属性选择器**********************</font><br/>
+            <ul>
+                <li>[属性] --> 选择具有指定属性的元素</li>
+                <li>[属性 = 值] --> 选择具有指定属性和值的元素</li>
+                <li>[属性 ~= 值] --> 选择含有指定值的属性的元素</li>
+                <li>[属性 |= 值(单词)] --> 选择具有指定值开头的属性的元素</li>
+                <li>[属性 ^= 值] --> 选择具有指定值开头的属性的元素</li>
+                <li>[属性 $= 值] --> 选择具有指定值结尾的属性的元素</li>
+                <li>[属性 *= 值] --> 选择具有包含指定值的属性的元素</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************背景**********************</font><br/>
+            <ul>
+                <li>背景颜色 --> background-color: 颜色</li>
+                <li>背景图片 --> background-image: url("图片路径") z-index: (正|负)重叠</li>
+                <li>背景图片重复 --> background-repeat: (repeat-x; repeat-y; no-repeat)</li>
+                <li>背景图片滚动 --> background-attachment: (fixed; scroll)</li>
+                <li>背景图片位置 --> background-position: (left; right) (top; center; bottom)</li>
+                <li>速记属性     --> background: color image repeat attachment position</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************边框**********************</font><br/>
+            <ol>
+                <li>类型 --> border-style: 
+                    <ul>
+                        <li>dotted - 定义虚线边框</li>
+                        <li>dashed - 定义虚线边框</li>
+                        <li>solid - 定义实线边框</li>
+                        <li>double - 定义双边框</li>
+                        <li>groove - 定义3D凹槽边框。效果取决于边框颜色值</li>
+                        <li>ridge - 定义3D脊状边界。效果取决于边框颜色值</li>
+                        <li>inset - 定义3D嵌入边框。效果取决于边框颜色值</li>
+                        <li>outset - 定义3D开始边框。效果取决于边框颜色值</li>
+                        <li>none - 没有边界</li>
+                        <li>hidden - 定义隐藏边框</li>
+                    </ul>
+                </li>
+                <li>宽度 --> border-width: (top; right; bottom; left)(px; pt; cm; em)</li>
+                <li>颜色 --> border-color: (top; right; bottom; left)颜色</li>
+                <li>速记属性 --> border: width style color
+                    <ul>
+                        <li>border-top</li>
+                        <li>border-right</li>
+                        <li>border-bottom</li>
+                        <li>border-left</li>
+                    </ul>
+                </li>
+                <li>圆角边框 --> border-radius: px</li>
+            </ol>
+        </div>
+
+        <div>
+            <font>**********************轮廓**********************</font><br/>
+            <ul>
+                <li>类型 --> outline-style: 同border-style</li>
+                <li>颜色 --> outline-color: 颜色</li>
+                <li>宽度 --> outline-width: 宽度</li>
+                <li>速记属性 --> outline: width style color</li>
+                <li>偏移 --> outline-offset: px</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************文字**********************</font><br/>
+            <ul>
+                <li>文字颜色 --> color: 颜色    opacity： 透明度</li>
+                <li>文字对齐 --> text-align: (left; right; center)</li>
+                <li>文字装饰 --> text-decoration: (underline; none; ...)</li>
+                <li>文字转换 --> text-transform: (uppercase; lowercase; capitalize)</li>
+                <li>文字缩进 --> text-indent: px</li>
+                <li>字母间距 --> letter-spacing: px</li>
+                <li>单词间距 --> word-spacing: px</li>
+                <li>行高 --> line-height: num</li>
+                <li>文字方向 --> dircetion: (rtl; ltr; ...)</li>
+                <li>文字阴影 --> text-shadow: (水平 垂直 颜色)</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************字体**********************</font><br/>
+            <ul>
+                <li>字体样式 --> font-style: </li>
+                <li>字体大小 --> font-size: (px; em; %)</li>
+                <li>字体重量 --> font-weight: (normal; bold; ...)</li>
+                <li>字体变体 --> font-variant: (normal; small-caps; ...)</li>
+                <li>响应字体 --> font-size: vw</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************列表**********************</font><br/>
+            <ul>
+                <li>标记样式 --> list-style-type: (circle; square; upper-roman; lower-alpha)</li>
+                <li>列表图像 --> list-style-image: url("图片路径")</li>
+                <li>标记位置 --> list-style-position: (inside; outside)</li>
+                <li>速记属性 --> list-style: type position image</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************css布局 之 溢出**********************</font><br/>
+            overflow: (overflow-x; overflow-y)
+            <ul>
+                <li>visible</li>
+                <li>hidden</li>
+                <li>scroll</li>
+                <li>auto</li>
+            </ul>
+        </div>
+
+        <div>
+            <font>**********************css布局 之 浮动**********************</font><br/>
+            float: (left; right)
+            clear: (left; right; both; none; inherit)
+        </div>
+    </body>
+</html>

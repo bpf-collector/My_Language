@@ -1,0 +1,97 @@
+body{
+    width: 950px;
+    height: 800px;
+    margin: 0 auto;
+    font-size: 13px;
+    border: 1px solid lightgray;
+}
+
+/*顶部*/
+.top{
+    width: 946px;
+    height: 22px;
+    margin-top: 2px;
+    margin-left: 2px;
+    /*background-color: pink;*/
+}
+/*登录*/
+.login{
+    width: 420px;
+    height: 22px;
+    float: left;
+    background-color: lightgray;
+}
+/*设为首页*/
+.setIndex{
+    width: 80px;
+    height: 22px;
+    margin-left: 100px;
+    float: left;
+    background-color: lightgray;
+}
+/*热情链接*/
+.hotUrl{
+    width: 250px;
+    height: 22px;
+    background-color: lightgray;
+    float: right;
+}
+
+/*次顶部*/
+.top_2{
+    width: 946px;
+    height: 60px;
+    margin-top: 2px;
+    margin-left: 2px;
+    /*background-color: aqua;*/
+}
+/*搜狐logo*/
+.logo{
+    float: left;
+}
+.logo img{
+    width: 150px;
+    height: 59px;
+}
+/*导航栏*/
+.navigate{
+    width: 794px;
+    height: 60px;
+    float: right;
+    background-color: lightgray;
+}
+
+/*次次顶部*/
+.top_3{
+    width: 946px;
+    height: 220px;
+    margin-top: 2px;
+    margin-left: 2px;
+    /*background-color: pink;*/
+}
+.t3_col_1{
+    width: 150px;
+    height: 220px;
+    float: left;
+    background-color: lightgray;
+}
+.t3_col_2{
+    width: 389px;
+    height: 220px;
+    margin-left: 2px;
+    float: left;
+    background-color: lightgray;
+}
+.t3_col_3{
+    width: 200px;
+    height: 220px;
+    margin-left: 2px;
+    float: left;
+    background-color: lightgray;
+}
+.t3_col_4{
+    width: 200px;
+    height: 220px;
+    float: right;
+    background-color: lightgray;
+}

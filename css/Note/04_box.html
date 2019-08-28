@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+        <title>盒子模型</title>
+        <link rel="stylesheet" href="04_box.css" type="text/css">
+    </head>
+    <body>
+        <font style="font-style: normal">《<a href="01_HelloCss.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************盒子模型**********************</font><br/>
+        <!--
+            标准流：    按照顺序出现 代码中的字样。写在前的先出现，写在后的慢出现。
+            非标准流：  没按照顺序出现在原来位置。
+
+            盒子模型：
+                边界 margin
+                边框 border
+                填充 padding
+                内容 content
+            <li><img src="" alt="图片"></li>
+
+            浮动：
+                float: (right/left)
+                clear: (right/left/both)
+        -->
+        <font class="AnLi">*********************案例一*********************</font><br/>
+        <div class="div_1">
+            <div class="div_1_1">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=578060807,604419519&fm=26&gp=0.jpg" alt="Picture" />
+            </div>
+            <div class="div_1_2">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1264326134,4044742678&fm=26&gp=0.jpg" alt="Picture" />
+            </div>
+        </div>
+            
+        <font class="AnLi">*********************案例二*********************</font><br/>
+        <div class="div_2">
+            <ul>
+                <li><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2504380501,293203974&fm=26&gp=0.jpg" alt="图片"><a href="#">雪人</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2226981776,1761593763&fm=26&gp=0.jpg" alt="图片"><a href="#">超级飞侠</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3159653454,665059919&fm=26&gp=0.jpg" alt="图片"><a href="#">狗狗</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2504380501,293203974&fm=26&gp=0.jpg" alt="图片"><a href="#">雪人</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2226981776,1761593763&fm=26&gp=0.jpg" alt="图片"><a href="#">超级飞侠</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3159653454,665059919&fm=26&gp=0.jpg" alt="图片"><a href="#">狗狗</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2504380501,293203974&fm=26&gp=0.jpg" alt="图片"><a href="#">雪人</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2226981776,1761593763&fm=26&gp=0.jpg" alt="图片"><a href="#">超级飞侠</a></li>
+                <li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3159653454,665059919&fm=26&gp=0.jpg" alt="图片"><a href="#">狗狗</a></li>
+            </ul>
+        </div>
+
+        <font class="AnLi">*********************案例三*********************</font><br/>
+        <div class="div_3">
+            <div class="div_3_1" id="div_3_1_special">div1</div>
+            <div class="div_3_1">div2</div>
+            <div class="div_3_1">div3</div>
+        </div>
+    </body>
+</html>

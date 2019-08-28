@@ -1,0 +1,105 @@
+.AnLi{
+    color: red;
+    font-size: 20px;
+}
+
+/* 案例一 */
+.div_1{
+    border: 1px solid red;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto; /* 0: 上下为0 auto: 左右居中*/
+}
+
+.div_1 img{
+    border: 1px solid yellow;
+    width: 100px;
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.div_1_1{
+    border: 1px solid blue;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    /*padding-top: 5px;
+    padding-left: 5px; 同img中的margin*/
+}
+
+.div_1_2{
+    border: 1px solid blue;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+/* 案例二 */
+.div_2{
+    border: 1px solid blue;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto; /* 0: 上下为0 auto: 左右居中*/
+}
+
+.div_2 ul{
+    border: 1px solid red;
+    width: 500px;
+    height: 250px;
+    margin-left: 30px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.div_2 li{
+    border: 1px solid greenyellow;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 15px;
+    float: left;    /* 左浮动 */
+    padding: 0;
+}
+
+.div_2 img{
+    border: 1px solid red;
+    width: 60px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.div_2 a{
+    font-size: 11px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+/* 案例三 */
+.div_3{
+    width: 600px;
+    height: 350px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.div_3_1{
+    width: 150px;
+    height: 100px;
+    border: 1px solid blue;
+    background-color: pink;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#div_3_1_special{
+    float: right;
+}
+
+
+a:link{color: blue; text-decoration: none;}
+a:hover{text-decoration: underline;}
+a:visited{color: blue;}
