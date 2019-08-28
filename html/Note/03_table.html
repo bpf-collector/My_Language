@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表格</title>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+        <style>
+            .special{border: 1px solid black; border-collapse: collapse;}
+            .special th{border: 1px solid black; border-collapse: collapse;}
+            .special tr{border: 1px solid black; border-collapse: collapse;}
+            .special td{border: 1px solid black; border-collapse: collapse;}
+
+            #UI{
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                background-color: dimgray;
+            }
+            #UI li{
+                float: left;
+            }
+            #UI a{
+                color: white;
+                padding: 15px;
+            }
+            #UI a:hover{
+                background-color: black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <font>《<a href="01_HelloWorld.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************表格**********************</font><br/>
+        <!--
+            table:
+                tr:行 th:表头 td:列
+            caption: 标题 align(left, center, right) | valign(top, bottom)
+            bgcolor: 背景颜色
+            border: 边框
+            bordercolor: 边框颜色
+            width: 宽度
+            align: (center)居中
+            colspan: 跨列
+            rowspan: 跨行
+            cellspacing: 单元间隙
+        -->
+        <font style="color: red">案例1</font><br/>
+        <table border align="center">
+            <caption>测试</caption>
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+        </table>
+        <font style="color: red">案例2</font><br/>
+        <table border="2">
+            <tr>
+                <th>序号</th><th>名称</th><th>单价</th><th>数量</th>
+            </tr>
+            <tr>
+                <td>1</td><td>萝卜</td><td>8</td><td>3</td>
+            </tr>
+        </table>
+        <font style="color: red">案例3</font><br/>
+        <table class="special" >
+            <th colspan="3">菜单</th>
+            <tr>
+                <th>Food</th><th>Drink</th><th>Sweet</th>
+            </tr>
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+        </table>
+        <font style="color: red">案例4</font><br/>
+        <table border="3" cellspacing="5" cellpadding="8" bordercolor="red" bgcolor="yellow">
+            <tr><th rowspan="3">菜单</th><th>Food</th><td>1</td></tr>
+            <tr><th>Drink</th><td>2</td></tr>
+            <tr><th>Sweet</th><td>3</td></tr>
+        </table>
+        <font style="color: red">案例5</font><br/>
+        <table width="400" border="2" bordercolor="yellow">
+            <tr align="center"><th colspan="3">菜谱</th></tr>
+            <tr align="center"><td rowspan="2" width="100">素食</td><td>茄子</td><td>扁豆</td></tr>
+            <tr align="center"><td>豆腐</td><td>白菜</td></tr>
+            <tr align="center"><td rowspan="3" width="100">荤食</td><td>大虾</td><td>牛肉</td></tr>
+            <tr align="center"><td>红烧排骨</td><td>酸菜鱼</td></tr>
+            <tr align="center"><td>麻辣烫</td><td>手撕鸡</td></tr>
+        </table>
+
+        <font style="color: red">案例6</font><br/>
+        <ul id="UI">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Share</a></li>
+        </ul>
+    </body>
+</html>

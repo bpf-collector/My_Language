@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表单</title>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+    <body>
+        <font>《<a href="01_HelloWorld.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************表单**********************</font><br/>
+        <!--
+            <form action=URL method="GET | POST">
+                <fieldset>  对相关数据进行分组
+                <legend>    限定标题
+                <input type=* name=# size=输入框大小 placeholder=文本 value=文本 maxlength=输入的最长长度 readonly(只读) disabled(禁用)/>
+                    type: text, password, checkbox(复选框)[checked 默认选中], radio(单选框), file(文件)
+                    image(图片), hidden(隐藏域), submit, reset, color(颜色), date(日期), Datetime-local(日期时间)
+                    month(年月), number(数字)[min="" max=""], search(搜索), (tel)电话号码, url(网址), week(周)
+            </form>
+
+            下拉列表：
+            <select name="" id="" multiple(多选) size>
+                <option value=""></option>
+            </select>
+
+            输入文本框：
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            按钮：button
+        -->
+        
+        <font style="color: red">案例1</font><br/>
+        <form action="01_HelloWorld.html" method="POST">
+            <fieldset>
+                <legend style="text-align: center;">登录页面</legend>
+                用户名：<input type="text" name="username" value="请输入..."/><br/>
+                密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd" /><br/>
+                <input type="submit" value="登录" /> <input type="reset" value="重置" />
+            </fieldset>
+        </form>
+
+        <font style="color: red">案例2 注册页面</font><br/>
+        <form action="01_HelloWorld.html" method="POST">
+            用户名：<input type="text" name="username" /><br/>
+            密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd" /><br/>
+            性&nbsp;&nbsp;&nbsp;别：<input type="radio" name="r1" />男&nbsp;&nbsp;<input type="radio" name="r1" />女<br/>
+            爱&nbsp;&nbsp;&nbsp;好：<br/>
+            <input type="checkbox" name="c1" />游泳<br/>
+            <input type="checkbox" name="c1" />跑步<br/>
+            <input type="checkbox" name="c1" />滑板<br/>
+            <input type="checkbox" name="c1" checked/>篮球<br/>
+            <input type="checkbox" name="c1" />羽毛球<br/>
+            <input type="checkbox" name="c1" />乒乓球<br/>
+            <input type="submit" value="注册" /> <input type="reset" value="重置" />
+        </form>
+
+        <font style="color: red">案例3 教师评价</font><br/>
+        <form action="01_HelloWorld.html" method="POST">
+            <select name="teacher">
+                <option value="语文">语文</option>
+                <option value="数学">数学</option>
+                <option value="英语">英语</option>
+                <option value="生物">生物</option>
+                <option value="地理">地理</option>
+                <option value="历史">历史</option>
+                <option value="政治">政治</option>
+                <option value="物理">物理</option>
+                <option value="化学">化学</option>
+            </select><br/>
+            <textarea name="evaluate" cols="30" rows="4">请输入评语...</textarea><br/>
+            <input type="submit" value="提交" /> <input type="reset" value="重置" />
+        </form>
+        
+        <font style="color: red">案例4 上传文件</font><br/>
+        <form action="01_HelloWorld.html" method="POST">
+            请选择文件： <input type="file" name="File" />&nbsp;
+            <input type="submit" value="上传" />
+        </form>
+
+        <font style="color: red">案例5 按钮</font><br/>
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+        <font style="color: red">案例6 预先定义的列表元素</font><br/>
+        <form action="#">
+            <input type="text" list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Microsoft Page"></option>
+            </datalist>
+            <input type="submit"/>
+        </form>
+
+        <font style="color: red">案例7 搜索</font><br/>
+        <form action="http://baidu.com">
+            百度搜索：
+            <input type="search">
+            <input type="submit">
+        </form>
+
+        <font style="color: red">案例8 电话号码</font><br/>
+        <form>
+            Telephone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            <input type="submit">
+            <span>Format: 999-999-99-999</span>
+        </form>
+    </body>
+</html>

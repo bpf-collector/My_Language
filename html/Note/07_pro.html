@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charser="utf-8">
+        <title>字体</title>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+    <body>
+        <font>《<a href="01_HelloWorld.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************字体**********************</font><br/>
+        <!--
+            设置空白
+            <body leftmargin | topmargin=大小>
+
+            标尺线：<hr size=大小 width=宽度 align=left|right color=颜色 noshade>
+
+            物理字体：
+                粗体：b
+                斜体：i
+                下划线：u
+                删除线：s
+                上：sup
+                中：tt
+                下：sub
+            逻辑字体：
+                em strong code samp kbd var dfn cite small big
+            客户端字体：
+                face=字体名称
+            文字对齐：
+                p: 段落
+                br: 换行
+                nobr: 不换行
+                center: 居中
+                align: 位置
+                q: 引号
+                address: 地址
+                abbr: 缩写 <abbr title="不明飞行物">UFO</abbr>
+                cite: 题目、书名
+                bdo: 反向书写
+            文字分区：
+                <div align=>...</div>
+            
+            预格式化文本：
+                <pre>...</pre>
+            
+            几乎不用：
+                <listing>...</listing>
+                <xmp>...</xmp>
+            空白：
+                spacer
+                    type: block horizontal(水平) vertical(垂直)
+            块引用：
+                blockquote
+            闪烁：
+                blink
+
+            文字移动：
+                marquee
+                    direction: 移动方向left right up down
+                    bihavior: 移动方式 scroll slide alternate
+                    loop: 循环次数
+                    scrollamount: 速度
+                    scrolldelay: 延时
+                    bgcolor: 背景颜色
+            
+            多媒体：embed src=文件名称 
+            背景音乐： bgsound src=文件名称 loop=循环次数
+
+            键盘输入：kbd
+            程序代码：code
+            程序输出：samp
+            变量： var
+
+        -->
+        <hr size="10" noshade/>
+        <font style="color: red">案例1</font><br/>
+        <b>粗体</b><br/>
+        <i>斜体</i><br/>
+        <u>下划线</u><br/>
+        <s>删除线</s><br/>
+        <sup>上</sup> <tt>中</tt> <sub>下</sub><br/>
+
+        <hr size="5" noshade />
+        <font style="color: red">案例2</font><br/>
+        <em>em</em><br/>
+        <strong>strong</strong><br/>
+        <code>code</code><br/>
+        <samp>samp</samp><br/>
+        <kbd>kbd</kbd><br/>
+        <var>var</var><br/>
+        <dfn>dfn</dfn><br/>
+        <cite>cite</cite><br/>
+        <small>small</small><br/>
+        <big>big</big><br/>
+        
+        <hr size="5" />
+        <font style="color: red">案例3</font><br/>
+        <font style="font-size: 120px" face="仿宋">标题</font>
+        <font style="font-size: 120px" face="楷体">标题</font><br/>
+        <font style="font-size: 120px" face="宋体">标题</font>
+        <font style="font-size: 120px" face="黑体">标题</font>
+        <font style="font-size: 120px" face="微软雅黑">标题</font>
+
+        <hr size="5" />
+        <font style="color: red">案例4</font><br/>
+        <div align="center" >图片<img src="IMG.jpg" alt="这是图片" width="100" /></div><br/>
+        <blink>闪烁</blink>
+
+        <hr size="5" />
+        <font style="color: red">案例5</font><br/>
+        <marquee behavior="alternate" direction="left" scrollamount="50">我会跑...</marquee>
+    </body>
+</html>

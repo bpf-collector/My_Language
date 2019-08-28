@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>超链接、图像</title>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+    <body>
+        <font>《<a href="01_HelloWorld.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************超链接**********************</font><br/>
+        <a href="http://www.baidu.com" target="_self">百度</a>
+        <a href="mailto:3311790553@qq.com">邮箱</a>
+
+        <br/>
+        <font>**********************图像**********************</font><br/>
+        <!--
+            title: 标题
+            src: 图片路径
+            alt: 图片未加载完时显示的文字
+            border: 图片边框大小
+            align: (top middle bottom)图片与文字对齐
+        -->
+        <font style="color: red">案例1</font><br/>
+        <img src="IMG.jpg" title="这是图片！" width="200px" alt="IMG.jpg" align="middle"/>图片<br/>
+
+        <font style="color: red">案例2</font><br/>
+        <img src="IMG.jpg" width="200px" alt="IMG.jpg" align="left"/>图片
+        <br/>文字1<br/>文字2<br clear="all"/>文字3<br/>
+
+        <font style="color: red">案例3</font><br/>
+        <img src="IMG.jpg" width="200px" alt="IMG.jpg" align="left" vspace=10 hspace=20/>图片
+        <br/>文字1<br/>文字2<br/>文字3<br clear="all"/>
+
+        <font style="color: red">案例4</font><br/>
+        <img src="IMG.jpg" width="200px" alt="IMG.jpg" border=5/>
+        <img src="IMG.jpg" width="200px" alt="IMG.jpg" border=5/>
+        <img src="IMG.jpg" width="200px" alt="IMG.jpg" border=5/><br clear="all"/>
+
+        <font style="color: red">案例5</font><br/>
+        <img usemap="#workmap" src="https://www.w3schools.com/html/workplace.jpg" alt="图片">
+        <map name="workmap">
+            <area shape="rect" coords="34, 44, 270, 350" href="https://baike.baidu.com/item/computer/337896?fr=aladdin" alt="computer">
+            <area shape="rect" coords="290, 170, 335, 250" href="https://www.phonearena.com/" alt="phone">
+            <area shape="circle" coords="337, 300, 44" href="https://baike.baidu.com/item/咖啡/29518?fr=aladdin&fromid=13858171&fromtitle=coffee" alt="coffee">
+        </map><br/>
+
+        <font style="color: red">案例6</font><br/>
+        <picture>
+            <source media="(min-width: 900px)" srcset="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2667142443,3385791950&fm=26&gp=0.jpg" />
+            <source media="(min-width: 700px)" srcset="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3610360939,249538740&fm=26&gp=0.jpg"/>
+            <source media="(min-width: 400px)" srcset="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3692752082,2891064166&fm=26&gp=0.jpg" />
+            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2958829097,3114652884&fm=26&gp=0.jpg" alt="sky" style="width: auto;" />
+        </picture>
+    </body>
+</html>

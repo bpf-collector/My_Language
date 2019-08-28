@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>框架</title>
+        <link rel="stylesheet" href="a_style.css" type="text/css">
+    </head>
+        <!-- <font>《<a href="01_HelloWorld.html" target="_self">回首页</a>》</font><br/>
+        <font>**********************框架**********************</font><br/> -->
+        <!--
+            frameset
+                frameborder: 边框大小 (1, 0)
+                framespacing: 边框间隙
+                bordercolor: 边框颜色
+                cols | rows: 百分比(逗号分开)
+                marginwidth: 页面空白
+                marginheight:页面空白
+                scrolling: 管滚条 (yes, no, auto)
+            frame
+                name: 给frame取名
+                src: html文件路径
+                noresize: 尺寸大小不可再更改
+            iframe 浮动窗口
+            <iframe src="" frameborder="0">此处文字显示在不支持浮动窗口浏览器上</iframe>
+        -->
+    <frameset rows="40%, *" frameborder="1" bordercolor="lightgreen">
+        <frame src="04_ul.html" / noresize>
+        <frameset cols="30%, *" frameboder="1" bordercolor="pink">
+                <frame src="03_table.html" noresize scrolling="no" />
+                <frame src="04_ul.html" / noresize></frame>
+        </frameset>
+    </frameset>
+</html>
