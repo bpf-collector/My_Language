@@ -1,0 +1,61 @@
+# Project: myself
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "Source\ Files/main.o" "Source\ Files/MS_calcPi.o" "Source\ Files/MS_equation.o" "Source\ Files/MS_Fibonacci.o" "Source\ Files/MS_Hanio.o" "Source\ Files/MS_leapYear.o" "Source\ Files/MS_leastMultiple.o" "Source\ Files/MS_maximumDivisor.o" "Source\ Files/MS_prime.o" "Source\ Files/MS_random.o" "Source\ Files/MS_sound.o" "Source\ Files/MS_wordsCount.o"
+LINKOBJ  = "Source Files/main.o" "Source Files/MS_calcPi.o" "Source Files/MS_equation.o" "Source Files/MS_Fibonacci.o" "Source Files/MS_Hanio.o" "Source Files/MS_leapYear.o" "Source Files/MS_leastMultiple.o" "Source Files/MS_maximumDivisor.o" "Source Files/MS_prime.o" "Source Files/MS_random.o" "Source Files/MS_sound.o" "Source Files/MS_wordsCount.o"
+LIBS     = -L"D:/2Software/Dev-Cpp/MinGW64/lib" -L"D:/2Software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/2Software/Dev-Cpp/MinGW64/include" -I"D:/2Software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2Software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/2Software/Dev-Cpp/MinGW64/include" -I"D:/2Software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2Software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/2Software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = MySelf.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"Source\ Files/main.o": Source\ Files/main.cpp
+	$(CPP) -c "Source Files/main.cpp" -o "Source Files/main.o" $(CXXFLAGS)
+
+"Source\ Files/MS_calcPi.o": Source\ Files/MS_calcPi.cpp
+	$(CPP) -c "Source Files/MS_calcPi.cpp" -o "Source Files/MS_calcPi.o" $(CXXFLAGS)
+
+"Source\ Files/MS_equation.o": Source\ Files/MS_equation.cpp
+	$(CPP) -c "Source Files/MS_equation.cpp" -o "Source Files/MS_equation.o" $(CXXFLAGS)
+
+"Source\ Files/MS_Fibonacci.o": Source\ Files/MS_Fibonacci.cpp
+	$(CPP) -c "Source Files/MS_Fibonacci.cpp" -o "Source Files/MS_Fibonacci.o" $(CXXFLAGS)
+
+"Source\ Files/MS_Hanio.o": Source\ Files/MS_Hanio.cpp
+	$(CPP) -c "Source Files/MS_Hanio.cpp" -o "Source Files/MS_Hanio.o" $(CXXFLAGS)
+
+"Source\ Files/MS_leapYear.o": Source\ Files/MS_leapYear.cpp
+	$(CPP) -c "Source Files/MS_leapYear.cpp" -o "Source Files/MS_leapYear.o" $(CXXFLAGS)
+
+"Source\ Files/MS_leastMultiple.o": Source\ Files/MS_leastMultiple.cpp
+	$(CPP) -c "Source Files/MS_leastMultiple.cpp" -o "Source Files/MS_leastMultiple.o" $(CXXFLAGS)
+
+"Source\ Files/MS_maximumDivisor.o": Source\ Files/MS_maximumDivisor.cpp
+	$(CPP) -c "Source Files/MS_maximumDivisor.cpp" -o "Source Files/MS_maximumDivisor.o" $(CXXFLAGS)
+
+"Source\ Files/MS_prime.o": Source\ Files/MS_prime.cpp
+	$(CPP) -c "Source Files/MS_prime.cpp" -o "Source Files/MS_prime.o" $(CXXFLAGS)
+
+"Source\ Files/MS_random.o": Source\ Files/MS_random.cpp
+	$(CPP) -c "Source Files/MS_random.cpp" -o "Source Files/MS_random.o" $(CXXFLAGS)
+
+"Source\ Files/MS_sound.o": Source\ Files/MS_sound.cpp
+	$(CPP) -c "Source Files/MS_sound.cpp" -o "Source Files/MS_sound.o" $(CXXFLAGS)
+
+"Source\ Files/MS_wordsCount.o": Source\ Files/MS_wordsCount.cpp
+	$(CPP) -c "Source Files/MS_wordsCount.cpp" -o "Source Files/MS_wordsCount.o" $(CXXFLAGS)
